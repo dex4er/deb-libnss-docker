@@ -1,0 +1,19 @@
+sudo: false
+addons:
+  apt:
+    packages:
+    - debhelper
+    - dh-autoreconf
+    - colorgcc
+    - git-buildpackage
+language: c
+before_script:
+  - git fetch origin +upstream:upstream
+  - git fetch origin +pristine-tar:pristine-tar
+script: 
+  - git-buildpackage --git-builder="debuild --set-envvar=CC=$TRAVIS_CC --no-lintian -i'^\.git/|^\.gitignore$|^\.travis.yml$|^\.gbp\.conf$' -I" -uc -us && debc && lintian --dont-check-part standards-version --fail-on-warnings --color always --info ../*.changes && dpkg --log=/dev/stderr --dry-run --install ../*.deb
+env:
+  global:
+    - TRAVIS_CC=colorgcc
+    - DEB_BUILD_OPTIONS='parallel=4'
+    - LINTIAN_PROFILE=debian

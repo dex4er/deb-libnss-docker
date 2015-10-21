@@ -1,0 +1,22 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nss-docker
+Upstream-Contact: Piotr Roszatycki <dexter@debian.org>
+Source: https://github.com/dex4er/nss-docker/releases/latest
+
+Files: *
+Copyright: 2015 Piotr Roszatycki <dexter@debian.org>
+License: LGPL-2+
+
+Files: debian/*
+Copyright: 2015, Piotr Roszatycki <dexter@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ On Debian systems, the full text of the GNU General Public
+ License can be found in the file
+ `/usr/share/common-licenses/GPL'.
+
+License: LGPL-2+
+ On Debian systems, the full text of the GNU Lesser General Public
+ License can be found in the file
+ `/usr/share/common-licenses/LGPL'.

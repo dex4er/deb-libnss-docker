@@ -1,0 +1,5 @@
+libnss-docker (0.01-1) unstable; urgency=low
+
+  * Initial release. Closes: #798483.
+
+ -- Piotr Roszatycki <dexter@debian.org>  Wed, 21 Oct 2015 18:25:45 +0200

@@ -1,0 +1,21 @@
+Source: libnss-docker
+Section: admin
+Priority: extra
+Maintainer: Piotr Roszatycki <dexter@debian.org>
+Build-Depends:
+  debhelper (>= 8.1.3),
+  dh-autoreconf
+Standards-Version: 3.9.5
+Homepage: https://github.com/dex4er/nss-docker
+VCS-Git: https://github.com/dex4er/deb-libnss-docker.git
+VCS-Browser: https://github.com/dex4er/deb-libnss-docker
+
+
+Package: libnss-docker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Description: nss module for finding Docker containers
+ This package contains a plugin for the Name Service Switch, providing host
+ name resolution for Docker containers.
