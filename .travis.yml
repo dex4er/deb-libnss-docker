@@ -1,6 +1,7 @@
 sudo: true
 language: c
 before_script:
+  - sudo apt-get update
   - sudo apt-get install colorgcc debhelper dh-autoreconf git-buildpackage
   - git fetch origin +upstream:upstream
   - git fetch origin +pristine-tar:pristine-tar
