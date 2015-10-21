@@ -1,13 +1,7 @@
-sudo: false
-addons:
-  apt:
-    packages:
-    - debhelper
-    - dh-autoreconf
-    - colorgcc
-    - git-buildpackage
+sudo: true
 language: c
 before_script:
+  - sudo apt-get install colorgcc debhelper dh-autoreconf git-buildpackage
   - git fetch origin +upstream:upstream
   - git fetch origin +pristine-tar:pristine-tar
 script: 
