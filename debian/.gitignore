@@ -1,6 +1,7 @@
 /*.debhelper
 /*.log
 /*.substvars
+/autoreconf.*
 /files
 /tmp/
 

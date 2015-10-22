@@ -7,11 +7,13 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     PROVEFLAGS += -j$(PARALLEL)
 endif
 
-DESTDIR := debian/libnss-docker
-NSSDIR := /lib/$(DEB_HOST_MULTIARCH)
+DESTDIR := $(CURDIR)/debian/tmp
 
 %:
 	dh $@ --parallel --with autoreconf
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-dependency-tracking --libdir=/usr/lib/$(DEB_HOST_MULTIARCH) V=1 PROVEFLAGS="$(PROVEFLAGS)"
+	dh_auto_configure -- --enable-dependency-tracking V=1 PROVEFLAGS="$(PROVEFLAGS)"
+
+override_dh_auto_install:
+	dh_auto_install -- DESTDIR="$(DESTDIR)"

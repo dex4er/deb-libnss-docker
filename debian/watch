@@ -1,0 +1,2 @@
+version=3
+https://github.com/dex4er/nss-docker/releases /dex4er/nss-docker/archive/master/(.*)\.tar\.gz

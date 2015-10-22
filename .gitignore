@@ -31,7 +31,6 @@ config.log
 config.status
 config.sub
 configure
-debian
 depcomp
 install-sh
 libtool
