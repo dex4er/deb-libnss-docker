@@ -13,7 +13,7 @@ DESTDIR := $(CURDIR)/debian/tmp
 	dh $@ --parallel --with autoreconf
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-dependency-tracking V=1 PROVEFLAGS="$(PROVEFLAGS)"
+	dh_auto_configure -- --enable-dependency-tracking V=1 EXTRA_CFLAGS='-Wall' PROVEFLAGS="$(PROVEFLAGS)"
 
 override_dh_auto_install:
 	dh_auto_install -- DESTDIR="$(DESTDIR)"
