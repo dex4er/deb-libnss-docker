@@ -1,2 +1,3 @@
 non-dev-pkg-with-shlib-symlink .*
 package-name-doesnt-match-sonames libnss-docker.*
+postrm-should-call-ldconfig .*
