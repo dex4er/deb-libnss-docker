@@ -8,8 +8,13 @@ Copyright: 2015 Piotr Roszatycki <dexter@debian.org>
 License: LGPL-2+
 
 Files: debian/*
-Copyright: 2015, Piotr Roszatycki <dexter@debian.org>
+Copyright: 2015 Piotr Roszatycki <dexter@debian.org>
 License: GPL-2+
+
+Files: debian/libnss-docker.postinst debian/libnss-docker.postrm
+Copyright: 2004-2007 Lennart Poettering
+           2015 Piotr Roszatycki <dexter@debian.org>
+License: LGPL-2+
 
 License: GPL-2+
  On Debian systems, the full text of the GNU General Public
