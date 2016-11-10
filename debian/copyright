@@ -4,11 +4,11 @@ Upstream-Contact: Piotr Roszatycki <dexter@debian.org>
 Source: https://github.com/dex4er/nss-docker/releases/latest
 
 Files: *
-Copyright: 2015 Piotr Roszatycki <dexter@debian.org>
+Copyright: 2015-2016 Piotr Roszatycki <dexter@debian.org>
 License: LGPL-2+
 
 Files: debian/*
-Copyright: 2015 Piotr Roszatycki <dexter@debian.org>
+Copyright: 2015-2016 Piotr Roszatycki <dexter@debian.org>
 License: GPL-2+
 
 Files: debian/libnss-docker.postinst debian/libnss-docker.postrm
