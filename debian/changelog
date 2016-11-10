@@ -2,7 +2,7 @@ libnss-docker (0.02-1) unstable; urgency=medium
 
   * New upstream release.
 
- -- Piotr Roszatycki <dexter@debian-sid>  Thu, 10 Nov 2016 04:31:06 +0100
+ -- Piotr Roszatycki <dexter@debian.org>  Thu, 10 Nov 2016 04:31:06 +0100
 
 libnss-docker (0.01-1) unstable; urgency=low
 
