@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/dex4er/nss-docker.png?branch=master)](https://travis-ci.org/dex4er/nss-docker)
+[![Upstream Build Status](https://travis-ci.org/dex4er/nss-docker.png?branch=master)](https://travis-ci.org/dex4er/nss-docker)
+[![Package Build Status](https://travis-ci.org/dex4er/deb-libnss-docker.png?branch=master)](https://travis-ci.org/dex4er/deb-libnss-docker)
 
 This is a plugin for the GNU Name Service Switch (NSS) functionality of
 the GNU C Library (glibc) providing mechanism for finding Docker
