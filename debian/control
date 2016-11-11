@@ -14,6 +14,7 @@ VCS-Browser: https://github.com/dex4er/deb-libnss-docker
 Package: libnss-docker
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: docker.io
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Description: nss module for finding Docker containers
