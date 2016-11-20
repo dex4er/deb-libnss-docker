@@ -2,8 +2,11 @@ sudo: required
 dist: trusty
 language: c
 before_script:
+  - export LC_ALL=C LC_TYPE=C LANG=
+  - sudo apt-get install debian-archive-keyring
+  - echo 'deb http://ftp.de.debian.org/debian/ sid main' | sudo tee -a /etc/apt/sources.list
   - sudo apt-get update
-  - sudo apt-get install -yy colorgcc debhelper dh-autoreconf git-buildpackage
+  - sudo apt-get -o Dpkg::Options::="--force-overwrite" install -yy build-essential colorgcc dpkg-dev debhelper dh-autoreconf fakeroot git-buildpackage
   - git fetch origin +upstream:upstream
   - git fetch origin +pristine-tar:pristine-tar
 script: >
