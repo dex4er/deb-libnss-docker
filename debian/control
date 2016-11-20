@@ -7,8 +7,8 @@ Build-Depends:
   dh-autoreconf
 Standards-Version: 3.9.8
 Homepage: https://github.com/dex4er/nss-docker
-VCS-Git: https://github.com/dex4er/deb-libnss-docker.git
-VCS-Browser: https://github.com/dex4er/deb-libnss-docker
+VCS-Git: https://anonscm.debian.org/git/collab-maint/libnss-docker.git
+VCS-Browser: https://anonscm.debian.org/git/collab-maint/libnss-docker.git
 
 
 Package: libnss-docker
