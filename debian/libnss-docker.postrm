@@ -16,14 +16,8 @@ remove_nss_entry() {
         log "Could not find /etc/nsswitch.conf."
         return
     fi
-    perl -i -pe '
-        sub remove {
-            my $s = shift;
-            $s =~ s/\s+docker(\s+\[NOTFOUND=return\])?//g;
-            return $s;
-        }
-        s/^(hosts:)(.*)/$1.remove($2)/e;
-    ' /etc/nsswitch.conf
+    sed -E -i /etc/nsswitch.conf \
+        -e 's/^(hosts:.*)(\s+docker(\s+\[NOTFOUND=return\])?)(.*)$/\1\4/g'
 }
 
 action="$1"
