@@ -4,7 +4,8 @@ Priority: extra
 Maintainer: Piotr Roszatycki <dexter@debian.org>
 Build-Depends:
   debhelper (>= 9),
-  dh-autoreconf
+  dh-autoreconf,
+  dh-sequence-installnss,
 Standards-Version: 3.9.8
 Homepage: https://github.com/dex4er/nss-docker
 VCS-Git: https://anonscm.debian.org/git/collab-maint/libnss-docker.git
